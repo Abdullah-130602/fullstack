@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "SUSE", sans-serif;
+}
+
+.login-form-container {
+  border-radius: 0px 45px 300px 0px;
+  -webkit-border-radius: 0px 45px 300px 0px;
+  -moz-border-radius: 0px 45px 300px 0px;
+}
+
+.login-clip-path {
+  clip-path: polygon(78% 65.8%, 100% 100%, 0% 100%);
+  background: #ffefd5;
+}
+.login-clip-path2 {
+  clip-path: polygon(0% 0%, 100% 0%, 16.3% 25.5%);
+  background: #ffefd5;
+}
+
+.animatedView {
+  animation: slide-down-fade-in 0.7s ease;
+}
+
+@keyframes slide-down-fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
